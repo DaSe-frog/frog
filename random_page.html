@@ -22,15 +22,16 @@
 			<div class="dialog">
 				<script type="text/javascript">
 					function randomImg(){
-					  var imgAr = ['<img src="img/1.jpg" alt="1" />',
-								   '<img src="img/2.jpg" alt="2" />',
-								   '<img src="img/3.jpg" alt="3" />'];
+					  var imgAr = [
+						'<img src="img/1.jpg" alt="1">',
+						'<img src="img/2.jpg" alt="2">',
+						'<img src="img/3.jpg" alt="3">'];
 					  var rnd = Math.floor(Math.random()*imgAr.length);
 					  var rndImg = imgAr[rnd];
 					  var imgTag = document.getElementById('img');
 					  imgTag.innerHTML = rndImg;}
 					  window.onload = randomImg;
-				<script> 
+				</script> 
 			</div>
 		</div>
 
