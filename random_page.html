@@ -20,15 +20,17 @@
 
 		<div class="block">
 			<div class="dialog">
-				<script>
-				   pic=new Array(
-				   '<img src="img/1.jpg" width=200 alt="сорьки 1">',
-				   '<img src="img/2.jpg" width=200 alt=" dsooory 2">',
-				   '<img src="img/3.jpg" width=200 alt="ты сладкая лягушка 3 ">'
-				   );
-				   n=Math.floor(Math.random() * 3;
-				   document.write(pic[n]);
-				</script>
+				<script type="text/javascript">
+					function randomImg(){
+					  var imgAr = ['<img src="img/1.jpg" alt="#" />',
+								   '<img src="img/2.jpg" alt="#" />',
+								   '<img src="img/3.jpg" alt="#" />'];
+					  var rnd = Math.floor(Math.random()*imgAr.length);
+					  var rndImg = imgAr[rnd];
+					  var imgTag = document.getElementById('img');
+					  imgTag.innerHTML = rndImg;}
+					  window.onload = randomImg;
+				</script> 
 			</div>
 		</div>
 
